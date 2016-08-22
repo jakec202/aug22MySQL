@@ -1,0 +1,57 @@
+----Query The Data----
+1. SELECT all teachers
+SELECT * FROM excercise1.teacher;
+
+2. Select all classes
+SELECT * FROM excercise1.class;
+
+3. Select all Students
+SELECT * FROM excercise1.student;
+
+4. Select all classes for teacher 1
+(my teachers have id's 5-7)
+SELECT * FROM excercise1.class
+where teacher_id=5;
+
+5. Select all students for class 1
+SELECT * FROM excercise1.class_student
+Where class_id=1'
+
+6. Select all classes for student 1 
+SELECT * FROM excercise1.class_student
+Where student_id=1;
+
+7. Select all students who's first name starts with all
+SELECT * FROM excercise1.student
+Where first_name like 'A%';
+
+
+----Update Data----
+1. Update teach 1's name to superman
+UPDATE `excercise1`.`teacher`
+SET first_name = 'superman'
+WHERE teacher_id = 5;
+
+2. Update class 1's name to Underwater Basket Weaving
+UPDATE `excercise1`.`class`
+SET name = 'Underwater Basket Weaving'
+WHERE class_id = 1;
+
+3. Update Student 1's name to Wonder Woman
+UPDATE `excercise1`.`student`
+SET first_name = 'Wonder'
+WHERE student_id = 1;
+
+UPDATE `excercise1`.`student`
+SET last_name = 'Woman'
+WHERE student_id = 1;
+
+
+----Delete----
+1. Delete student 10.
+DELETE FROM `excercise1`.`student`
+WHERE student_id = 10;
+
+
+
+
